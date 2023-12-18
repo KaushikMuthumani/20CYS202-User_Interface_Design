@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Fitness</title>
+    <link rel="stylesheet" href="../ui/css/style.css">
+    <link rel="icon" href="../ui/images/logo_white-removebg-preview.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    </head>
+
+<body>
+    <header>
+        <h1 style="padding-left: 200px; font-size: 30px;">
+            ESCAPE FITNESS
+        </h1>
+        <img id="logo" src="../ui/images/logo_white-removebg-preview.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="../ui/html/login.html">LOGIN</a></li> Not a member?
+                <li><a href="../ui/html/Register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="container">
+            <div class="options-container">
+                <div class="option" onclick="navigateToPage('../ui/html/index2.html')">
+                    <img src="../ui/images/BMICAL.jpeg" alt="Body Harmony Navigator">
+                    <p><b>Body Harmony Navigator</b> - Explore Your Health Journey with BMI Calculator</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../ui/html/diet_1.html')">
+                    <img src="../ui/images/Diet.jpeg" alt="Nutrient-Rich Wellness">
+                    <p><b>Nutrient-Rich Wellness</b> - Discover the Secrets of a Wholesome Diet</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../ui/html/workout_3.html')">
+                    <img src="../ui/images/Ex.jpeg" alt="Active Living Adventures">
+                    <p><b>Active Living Adventures</b> - Transform Your Lifestyle with Invigorating Exercise</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../ui/html/get_3.html')">
+                    <img src="../ui/images/Get.jpeg" alt="Inner Self Odyssey">
+                    <p><b>Inner Self Odyssey</b> - Embark on a Journey to Understand and Enhance Yourself</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 style="font-family: Josefin Sans;">About Escape Fitness</h2>
+        <p>
+            Escape Fitness isn't just a gym. It's a transformative journey towards a healthier, happier you. Here, you'll ditch the constraints of traditional fitness and embrace a holistic approach to wellness, one that prioritizes understanding your body, celebrating
+            its strengths, and empowering you to reach your goals.
+        </p>
+        <p>
+            At Escape Fitness, we are committed to helping you achieve your fitness goals and live a healthier life.
+        </p>
+        <p>
+            <strong>Uncover Your Body's Secrets:</strong>
+        </p>
+        <ul>
+            <li><strong>BMI Analysis:</strong> Escape Fitness goes beyond the limitations of the BMI by providing a comprehensive body composition analysis.</li>
+            <li><strong>Personalized Guidance:</strong> Our certified trainers interpret your analysis and create a tailored fitness plan.</li>
+            <li><strong>Weight Management Solutions:</strong> We champion sustainable weight loss and muscle gain through healthy habits and effective exercise.</li>
+        </ul>
+        <p>
+            <strong>Holistic Well-being:</strong>
+        </p>
+        <p>
+            Escape Fitness recognizes the importance of mental wellness in your fitness journey. We offer yoga, meditation, and stress management workshops to promote holistic well-being.
+        </p>
+        <p>
+            <strong>Supportive Community:</strong>
+        </p>
+        <p>
+            Join our group classes and social events to connect with like-minded individuals. Our community provides support and motivation, turning your fitness journey into a shared and uplifting experience.
+        </p>
+        <p>
+            For more information or to get started on your fitness journey, contact us. We look forward to guiding you on the path to a healthier, happier lifestyle.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2 style="font-family: Josefin Sans;">Contact Escape Fitness</h2>
+        <p>
+            Contact Escape Fitness today for a free consultation and discover how we can help you reach your fitness goals!
+        </p>
+        <form id="contactForm" class="content">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+&emsp;
+    <footer class="footer">
+       
+        <p>&copy; Copyright-2023 <br>
+        Escape Fitness - Sree Chandan & Hansica<br>
+        II Year Btech CSE(CYS)<br>
+        Part of 20CYS202 - User Interface Design <br>
+       Amrita Vishwa Vidyapeetham, Coimbatore</p>
+   
+        
+    </footer>
+
+ 
+
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+            // Additional logic to handle form submission
+        });
+    </script>
+</body>
+
+</html>
